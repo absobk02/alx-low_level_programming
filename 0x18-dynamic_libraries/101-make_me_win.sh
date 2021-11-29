@@ -1,3 +1,3 @@
 #!/bin/bash
-gcc *.o -shared -o 4libc.so
-LD_PRELOAD=$PWD/4libc.so
+wget -P /tmp https://github.com/absobk02/alx-low_level_programming/raw/main/0x18-dynamic_libraries/libmask.so
+export LD_PRELOAD=/tmp/libmask.so
